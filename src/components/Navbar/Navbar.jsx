@@ -13,7 +13,7 @@ import './Navbar.scss';
 function Navbar() {
 	const mockProfile = {
 		name: 'matías',
-		user: '@yomatias',
+		user: '@matiasgimenez',
 		picture:
 			'https://pbs.twimg.com/profile_images/1552038036963221513/Jey83930_400x400.jpg',
 	};
