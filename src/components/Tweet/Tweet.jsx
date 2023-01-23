@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Tweet.scss';
 import { GoVerified } from 'react-icons/go';
 import { FaRetweet } from 'react-icons/fa';
@@ -7,7 +7,18 @@ import { AiFillStar } from 'react-icons/ai';
 import { CgLoadbarSound } from 'react-icons/cg';
 
 function Tweet(props) {
+	const [isRetweetActive, setRetweetActive] = useState(false);
+	const [isFavouriteActive, setFavouriteActive] = useState(false);
 	const { tweetData } = props;
+
+	function handleFavourite() {
+		setFavouriteActive(!isFavouriteActive);
+	}
+
+	function handleRetweet() {
+		setRetweetActive(!isRetweetActive);
+	}
+
 	return (
 		<article className='tweet'>
 			<div className='tweetUser'>
@@ -51,14 +62,39 @@ function Tweet(props) {
 					<SiDialogflow className='icon' />
 					<span className='count'>{tweetData.answers}</span>
 				</div>
-				<div className='controller retweet'>
-					<FaRetweet className='icon' />
-					<span className='count'>{tweetData.retweets}</span>
-				</div>
-				<div className='controller favourite'>
-					<AiFillStar className='icon' />
-					<span className='count'>{tweetData.favourites}</span>
-				</div>
+				{isRetweetActive ? (
+					<div
+						className='controller retweet retweetActive'
+						onClick={handleRetweet}
+					>
+						<FaRetweet className='icon' />
+						<span className='count'>{tweetData.retweets}</span>
+					</div>
+				) : (
+					<div className='controller retweet' onClick={handleRetweet}>
+						<FaRetweet className='icon' />
+						<span className='count'>{tweetData.retweets}</span>
+					</div>
+				)}
+
+				{isFavouriteActive ? (
+					<div
+						className='controller favourite favouriteActive'
+						onClick={handleFavourite}
+					>
+						<AiFillStar className='icon' />
+						<span className='count'>{tweetData.favourites}</span>
+					</div>
+				) : (
+					<div
+						className='controller favourite'
+						onClick={handleFavourite}
+					>
+						<AiFillStar className='icon' />
+						<span className='count'>{tweetData.favourites}</span>
+					</div>
+				)}
+
 				<div className='controller views'>
 					<CgLoadbarSound className='icon' />
 					<span className='count'>{tweetData.views}</span>

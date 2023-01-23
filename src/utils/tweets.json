@@ -13,6 +13,19 @@
 		"views": "558k"
 	},
 	{
+		"user": "@github",
+		"name": "Github",
+		"picture": "https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF9_400x400.jpg",
+		"verified": "true",
+		"date": "Jan 20, 2023",
+		"text": "Did you know, you can use tags in your Markdown on GitHub to make text appear like a button. It's perfect for documenting things like keyboard shortcuts and game controls in your READMEs, wikis and issues.",
+		"image": "https://pbs.twimg.com/media/FlpiD_yXgAETE5k?format=jpg&name=small",
+		"retweets": "2k",
+		"favourites": "35k",
+		"answers": "250",
+		"views": "700k"
+	},
+	{
 		"user": "@QuantumFracture",
 		"name": "Crespo",
 		"picture": "https://pbs.twimg.com/profile_images/1342152259359137792/BX1YBK2E_400x400.jpg",
@@ -31,13 +44,14 @@
 		"picture": "https://pbs.twimg.com/profile_images/1570271576683053056/-szDrDzd_400x400.jpg",
 		"verified": "true",
 		"date": "Dec 28, 2022",
-		"text": "Un hombre de cultura.",
-		"image": "https://pbs.twimg.com/media/Fi0e0EBXwAIhHYr?format=jpg&name=large",
+		"text": "RUBIUS REWIND: La Historia Completa. Ya lo teneis en YT. Para los antiguos, para los nuevos, para los que siguen ahi y para los que se fueron ❤️. ",
+		"image": "",
 		"retweets": "1k",
 		"favourites": "15k",
 		"answers": "128",
 		"views": "500k"
 	},
+
 	{
 		"user": "@ibaillanos",
 		"name": "Ibai",

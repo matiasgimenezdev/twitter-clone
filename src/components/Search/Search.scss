@@ -7,17 +7,24 @@
 	align-items: center;
 	gap: 0.3rem;
 	margin: 0.5rem;
+	overflow: hidden;
 	border-radius: 25px;
 	background-color: $light-grey;
 
 	.searchBar {
 		height: 2.8rem;
 		font-size: 1rem;
-		width: 70%;
+		width: 90%;
+		padding-left: 1rem;
 		overflow: hidden;
 		background-color: $light-grey;
 		color: $white;
 		outline: none;
 		border: none;
+
+		&:focus {
+			border-radius: 25px;
+			border: 2px solid $skyBlue;
+		}
 	}
 }

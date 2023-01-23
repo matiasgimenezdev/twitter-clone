@@ -6,7 +6,7 @@ import { FaHome } from 'react-icons/fa';
 import { MdOutlineTravelExplore, MdOutlineEmojiPeople } from 'react-icons/md';
 import { RiNotification2Fill } from 'react-icons/ri';
 import { BsListCheck, BsPenFill } from 'react-icons/bs';
-import { CiSquareMore } from 'react-icons/ci';
+import { CgMoreR } from 'react-icons/cg';
 import Item from '../Item/Item';
 import './Navbar.scss';
 
@@ -51,7 +51,7 @@ function Navbar() {
 					<span>Profile</span>
 				</p>
 				<p className='moreItem'>
-					<CiSquareMore className='icon' />
+					<CgMoreR className='icon' />
 					<span>More</span>
 				</p>
 				<button className='matweetButton'>
