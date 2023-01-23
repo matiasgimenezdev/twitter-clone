@@ -1,0 +1,23 @@
+@import '../../global/variables.scss';
+
+.searchContainer {
+	padding-left: 0.5rem;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin: 0.5rem;
+	border-radius: 25px;
+	background-color: $light-grey;
+
+	.searchBar {
+		height: 2.8rem;
+		font-size: 1rem;
+		width: 70%;
+		overflow: hidden;
+		background-color: $light-grey;
+		color: $white;
+		outline: none;
+		border: none;
+	}
+}

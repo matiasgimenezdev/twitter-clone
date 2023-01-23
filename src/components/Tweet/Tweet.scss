@@ -1,0 +1,69 @@
+@import '../../global/variables.scss';
+
+.tweet {
+	padding: 0.5rem;
+	border: 1px solid $light-grey;
+	min-height: 120px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $light-grey;
+	}
+
+	.tweetUser {
+		font-family: $font;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		gap: 0.5rem;
+		justify-content: left;
+
+		.tweetUserPicture {
+			height: 50px;
+			width: 50px;
+			border-radius: 50px;
+		}
+
+		.tweetUserData {
+			display: flex;
+			align-items: center;
+			gap: 0.6rem;
+
+			.tweetName {
+				font-weight: bold;
+				color: $white;
+				.verifiedIcon {
+					margin-left: 0.4rem;
+					color: $skyBlue;
+				}
+			}
+
+			.tweetUsername {
+				display: flex;
+				align-items: center;
+				gap: 0.3rem;
+				font-weight: normal;
+				color: $dark-grey;
+			}
+		}
+	}
+
+	.tweetContent {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.tweetText {
+			padding: 0.8rem 0.2rem;
+			font-size: 1.2rem;
+			color: $white;
+			font-family: $font;
+		}
+
+		.tweetImage {
+			height: 400px;
+			width: 400px;
+			border-radius: 25px;
+			align-self: center;
+		}
+	}
+}

@@ -1,0 +1,154 @@
+@import '../../global/variables.scss';
+
+.userItem {
+	font-family: $font;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.userContainer {
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
+
+		.userPicture {
+			height: 50px;
+			width: 50px;
+			border-radius: 50px;
+		}
+
+		.userData {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			flex-direction: column;
+			gap: 0.1rem;
+
+			.name {
+				font-weight: bold;
+				color: $white;
+			}
+
+			.verifiedIcon {
+				margin-left: 0.4rem;
+				color: $skyBlue;
+			}
+
+			.user {
+				font-weight: normal;
+				color: $dark-grey;
+			}
+		}
+	}
+
+	@mixin fButton {
+		border-radius: 50px;
+		width: 7rem;
+		height: 2.5rem;
+		font-weight: bold;
+		border: none;
+		margin-left: 1rem;
+		padding: 5px;
+		font-size: 0.95rem;
+		transition: background-color 0.3s ease;
+	}
+
+	.followButton {
+		@include fButton;
+		color: $grey;
+		background-color: $white;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	.followingButton {
+		@include fButton;
+		color: $white;
+		background-color: transparent;
+		border: 1px solid $white;
+
+		.unfollowText {
+			width: 100%;
+			text-align: center;
+			display: none;
+
+			color: $red;
+		}
+
+		.followingText {
+			width: 100%;
+			color: $white;
+		}
+
+		&:hover {
+			background-color: $light-red;
+			color: $red;
+			border: 1px solid red;
+		}
+
+		&:hover .unfollowText {
+			display: block;
+		}
+
+		&:hover .followingText {
+			display: none;
+		}
+	}
+
+	.userData {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		gap: 0.1rem;
+
+		.name {
+			font-weight: bold;
+		}
+
+		.user {
+			font-weight: normal;
+			color: $dark-grey;
+		}
+	}
+}
+
+.trendingItem {
+	font-family: $font;
+	cursor: pointer;
+	padding: 10px 6px;
+	width: 100%;
+	position: relative;
+	border-radius: 15px;
+
+	&:hover {
+		background-color: $light-grey;
+	}
+
+	.trendingData {
+		display: flex;
+		flex-direction: column;
+		gap: 0.1rem;
+
+		.topic {
+			font-size: 0.8rem;
+			color: $dark-grey;
+		}
+
+		.title {
+			font-weight: bold;
+		}
+	}
+
+	.moreButton {
+		color: $dark-grey;
+		position: absolute;
+		top: 5px;
+		right: 10px;
+
+		&:hover {
+			color: $white;
+		}
+	}
+}

@@ -1,0 +1,88 @@
+@import '../../global/variables.scss';
+
+.navBar {
+	font-family: $font;
+	width: 20%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	.navContainer {
+		color: $white;
+		display: flex;
+		margin: 0.8rem;
+		height: 100%;
+		flex-direction: column;
+		gap: 0.8rem;
+
+		.logo {
+			font-size: 3rem;
+			color: $skyBlue;
+			margin-left: 0.7rem;
+			cursor: pointer;
+		}
+
+		@mixin navItem {
+			font-size: 1.4rem;
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			padding: 0.5rem 0.7rem;
+			cursor: pointer;
+			border-radius: 25px;
+		}
+
+		.homeItem,
+		.notificationsItem,
+		.profileItem,
+		.listsItem,
+		.messagesItem,
+		.moreItem,
+		.exploreItem,
+		.bookmarksItem {
+			@include navItem;
+			.icon {
+				font-size: 2.2rem;
+			}
+
+			&:hover {
+				background-color: $light-grey;
+			}
+		}
+	}
+
+	.matweetButton {
+		width: 100%;
+		margin-top: 1rem;
+		min-height: 3.5rem;
+		border-radius: 40px;
+		font-size: 1.2rem;
+		font-weight: bold;
+		background-color: $skyBlue;
+		color: white;
+
+		&:hover {
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}
+
+	.profile {
+		width: 100%;
+		cursor: pointer;
+		padding: 0.5rem;
+		border-radius: 45px;
+		margin-top: 3rem;
+
+		&:hover {
+			background-color: $light-grey;
+		}
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.navBar {
+		width: 30%;
+	}
+}

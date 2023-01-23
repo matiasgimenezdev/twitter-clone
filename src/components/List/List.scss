@@ -1,0 +1,40 @@
+@import '../../global/variables.scss';
+
+.listContainer {
+	width: 80%;
+	padding: 0.6rem;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0.5rem 0.5rem;
+	border-radius: 25px;
+	background-color: $grey;
+
+	h2 {
+		padding: 0.5rem;
+		font-size: 1.6rem;
+		color: $white;
+		margin-bottom: 0.5rem;
+	}
+
+	.list {
+		padding: 0.3rem;
+		color: $white;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		.showMore {
+			cursor: pointer;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			height: 1.6rem;
+			padding: 6px;
+			color: $skyBlue;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}

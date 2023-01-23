@@ -1,0 +1,14 @@
+@import '../../global/variables.scss';
+
+.feed {
+	width: 50%;
+	height: 100%;
+	border: 1px solid $light-grey;
+}
+
+@media screen and (max-width: 1400px) {
+	.feed {
+		width: 70%;
+		border-right: none;
+	}
+}

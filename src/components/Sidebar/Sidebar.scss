@@ -1,0 +1,15 @@
+@import '../../global/variables.scss';
+
+.sideBar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 30%;
+}
+
+@media screen and (max-width: 1400px) {
+	.sideBar {
+		display: none;
+	}
+}
