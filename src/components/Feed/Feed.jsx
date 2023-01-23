@@ -1,5 +1,7 @@
 import React from 'react';
 import './Feed.scss';
+import { BsPenFill } from 'react-icons/bs';
+
 import tweets from '../../utils/tweets.json';
 import Tweet from '../Tweet/Tweet';
 
@@ -24,7 +26,8 @@ function Feed() {
 					placeholder='What´s happening?'
 				/>
 				<button className='matweetButton' onClick={handleClick}>
-					Matweet
+					<span>Matweet</span>
+					<BsPenFill />
 				</button>
 			</div>
 			{tweets.map((tweetData) => {
