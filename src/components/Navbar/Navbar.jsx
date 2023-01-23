@@ -5,7 +5,7 @@ import { TbMessages } from 'react-icons/tb';
 import { FaHome } from 'react-icons/fa';
 import { MdOutlineTravelExplore, MdOutlineEmojiPeople } from 'react-icons/md';
 import { RiNotification2Fill } from 'react-icons/ri';
-import { BsListCheck } from 'react-icons/bs';
+import { BsListCheck, BsPenFill } from 'react-icons/bs';
 import { CiSquareMore } from 'react-icons/ci';
 import Item from '../Item/Item';
 import './Navbar.scss';
@@ -24,37 +24,41 @@ function Navbar() {
 				<AiFillHeart className='logo' />
 				<p className='homeItem'>
 					<FaHome className='icon' />
-					Home
+					<span>Home</span>
 				</p>
 				<p className='exploreItem'>
 					<MdOutlineTravelExplore className='icon' />
-					Explore
+					<span>Explore</span>
 				</p>
 				<p className='notificationsItem'>
 					<RiNotification2Fill className='icon' />
-					Notifications
+					<span>Notifications</span>
 				</p>
 				<p className='messagesItem'>
 					<TbMessages className='icon' />
-					Messages
+					<span>Messages</span>
 				</p>
 				<p className='bookmarksItem'>
 					<BiBookmarkHeart className='icon' />
-					Bookmarks
+					<span>Bookmarks</span>
 				</p>
 				<p className='listsItem'>
 					<BsListCheck className='icon' />
-					Lists
+					<span>Lists</span>
 				</p>
 				<p className='profileItem'>
 					<MdOutlineEmojiPeople className='icon' />
-					Profile
+					<span>Profile</span>
 				</p>
 				<p className='moreItem'>
 					<CiSquareMore className='icon' />
-					More
+					<span>More</span>
 				</p>
-				<button className='matweetButton'>Matweet</button>
+				<button className='matweetButton'>
+					<span>Matweet</span>
+
+					<BsPenFill className='penIcon' />
+				</button>
 				<Item
 					itemData={mockProfile}
 					type='people'

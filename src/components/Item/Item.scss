@@ -152,3 +152,16 @@
 		}
 	}
 }
+
+@media screen and (max-width: 750px) {
+	.userItem {
+		.userContainer {
+			.userData {
+				.name,
+				.user {
+					display: none;
+				}
+			}
+		}
+	}
+}

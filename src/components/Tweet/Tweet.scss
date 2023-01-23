@@ -52,6 +52,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
 		.tweetText {
 			padding: 0.8rem 0.2rem;
 			font-size: 1.2rem;
@@ -60,10 +61,66 @@
 		}
 
 		.tweetImage {
-			height: 400px;
-			width: 400px;
+			height: 40%;
+			width: 40%;
 			border-radius: 25px;
 			align-self: center;
 		}
+	}
+
+	.tweetControllers {
+		margin-top: 0.5rem;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.controller {
+			width: 20%;
+			padding: 0.5rem;
+			gap: 0.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.icon {
+				width: 20px;
+				height: 20px;
+				fill: $dark-grey;
+				height: 2rem;
+			}
+
+			.count {
+				color: $dark-grey;
+				font-family: $font;
+			}
+		}
+
+		.answer:hover {
+			* {
+				color: $skyBlue;
+				fill: $skyBlue;
+			}
+		}
+
+		.retweet:hover {
+			* {
+				color: lightgreen;
+				fill: lightgreen;
+			}
+		}
+
+		.favourite:hover {
+			* {
+				color: gold;
+				fill: gold;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.tweetUsername {
+		font-size: 0.9rem;
 	}
 }

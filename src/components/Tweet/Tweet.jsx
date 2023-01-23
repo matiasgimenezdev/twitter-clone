@@ -1,6 +1,9 @@
 import React from 'react';
 import './Tweet.scss';
 import { GoVerified } from 'react-icons/go';
+import { FaRetweet } from 'react-icons/fa';
+import { SiDialogflow } from 'react-icons/si';
+import { AiFillStar } from 'react-icons/ai';
 
 function Tweet(props) {
 	const { tweetData } = props;
@@ -42,6 +45,20 @@ function Tweet(props) {
 					/>
 				) : null}
 			</div>
+			<section className='tweetControllers'>
+				<div className='controller answer'>
+					<SiDialogflow className='icon' />
+					<span className='count'>500</span>
+				</div>
+				<div className='controller retweet'>
+					<FaRetweet className='icon' />
+					<span className='count'>500</span>
+				</div>
+				<div className='controller favourite'>
+					<AiFillStar className='icon' />
+					<span className='count'>500</span>
+				</div>
+			</section>
 		</article>
 	);
 }

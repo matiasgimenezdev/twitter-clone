@@ -2,7 +2,7 @@
 
 .navBar {
 	font-family: $font;
-	width: 20%;
+	width: 30%;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -12,6 +12,7 @@
 		color: $white;
 		display: flex;
 		margin: 0.8rem;
+		width: 60%;
 		height: 100%;
 		flex-direction: column;
 		gap: 0.8rem;
@@ -53,7 +54,11 @@
 	}
 
 	.matweetButton {
-		width: 100%;
+		width: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
 		margin-top: 1rem;
 		min-height: 3.5rem;
 		border-radius: 40px;
@@ -84,5 +89,49 @@
 @media screen and (max-width: 1400px) {
 	.navBar {
 		width: 30%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.navBar {
+		align-items: flex-end;
+		width: 30%;
+
+		.navContainer {
+			margin-left: 2rem;
+			width: 80%;
+			align-items: flex-start;
+
+			.logo {
+				margin: 0;
+			}
+
+			.homeItem,
+			.notificationsItem,
+			.profileItem,
+			.listsItem,
+			.messagesItem,
+			.moreItem,
+			.exploreItem,
+			.bookmarksItem {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.matweetButton {
+		width: 10%;
+
+		span {
+			display: none;
+		}
 	}
 }
