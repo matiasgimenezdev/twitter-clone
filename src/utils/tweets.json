@@ -6,7 +6,11 @@
 		"verified": "true",
 		"date": "Jan 20, 2023",
 		"text": "Qué bien nos lo hemos pasado.",
-		"image": ""
+		"image": "",
+		"retweets": "2k",
+		"favourites": "35k",
+		"answers": "250",
+		"views": "700k"
 	},
 	{
 		"user": "@Rubiu5",
@@ -15,7 +19,11 @@
 		"verified": "true",
 		"date": "Dec 28, 2022",
 		"text": "Un hombre de cultura.",
-		"image": "https://pbs.twimg.com/media/Fi0e0EBXwAIhHYr?format=jpg&name=large"
+		"image": "https://pbs.twimg.com/media/Fi0e0EBXwAIhHYr?format=jpg&name=large",
+		"retweets": "1k",
+		"favourites": "15k",
+		"answers": "128",
+		"views": "500k"
 	},
 	{
 		"user": "@QuantumFracture",
@@ -24,7 +32,11 @@
 		"verified": "true",
 		"date": "Jan 22, 2023",
 		"text": "¡NUEVO PODCAST! Hoy hablamos sobre el origen del Universo, el Big Bang, la Inflación Cósmica y cómo podemos usarla para tener acceso a un “acelerador de partículas” ultrapoderoso.",
-		"image": ""
+		"image": "",
+		"retweets": "300",
+		"favourites": "5k",
+		"answers": "25",
+		"views": "300k"
 	},
 	{
 		"user": "@vercel",
@@ -33,6 +45,10 @@
 		"verified": "true",
 		"date": "Dec 29, 2022",
 		"text": "It's been a big year. Thank you to our community and customers for an incredible 2022.",
-		"image": ""
+		"image": "",
+		"retweets": "1k",
+		"favourites": "8k",
+		"answers": "56",
+		"views": "558k"
 	}
 ]

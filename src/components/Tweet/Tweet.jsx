@@ -4,6 +4,7 @@ import { GoVerified } from 'react-icons/go';
 import { FaRetweet } from 'react-icons/fa';
 import { SiDialogflow } from 'react-icons/si';
 import { AiFillStar } from 'react-icons/ai';
+import { CgLoadbarSound } from 'react-icons/cg';
 
 function Tweet(props) {
 	const { tweetData } = props;
@@ -48,15 +49,19 @@ function Tweet(props) {
 			<section className='tweetControllers'>
 				<div className='controller answer'>
 					<SiDialogflow className='icon' />
-					<span className='count'>500</span>
+					<span className='count'>{tweetData.answers}</span>
 				</div>
 				<div className='controller retweet'>
 					<FaRetweet className='icon' />
-					<span className='count'>500</span>
+					<span className='count'>{tweetData.retweets}</span>
 				</div>
 				<div className='controller favourite'>
 					<AiFillStar className='icon' />
-					<span className='count'>500</span>
+					<span className='count'>{tweetData.favourites}</span>
+				</div>
+				<div className='controller views'>
+					<CgLoadbarSound className='icon' />
+					<span className='count'>{tweetData.views}</span>
 				</div>
 			</section>
 		</article>

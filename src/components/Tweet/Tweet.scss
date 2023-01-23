@@ -69,7 +69,8 @@
 	}
 
 	.tweetControllers {
-		margin-top: 0.5rem;
+		margin: 0.6rem;
+		height: 2rem;
 		width: 100%;
 		display: flex;
 		align-items: center;
@@ -87,6 +88,7 @@
 				width: 20px;
 				height: 20px;
 				fill: $dark-grey;
+				color: $dark-grey;
 				height: 2rem;
 			}
 
@@ -114,6 +116,13 @@
 			* {
 				color: gold;
 				fill: gold;
+			}
+		}
+
+		.views:hover {
+			* {
+				color: rgb(235, 110, 131);
+				fill: rgb(235, 110, 131);
 			}
 		}
 	}

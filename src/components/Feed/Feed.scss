@@ -4,6 +4,64 @@
 	width: 50%;
 	height: 100%;
 	border: 1px solid $light-grey;
+
+	.title {
+		color: $white;
+		font-family: $font;
+		font-size: 1.5rem;
+		padding: 1rem;
+	}
+
+	.form {
+		padding: 1rem;
+		display: flex;
+		gap: 1rem;
+		border-top: 1px solid $light-grey;
+		min-height: 15vh;
+		max-height: 60vh;
+		position: relative;
+
+		[contentEditable='true']:empty:not(:focus):before {
+			content: attr(placeholder);
+			color: $dark-grey;
+		}
+		.tweetArea {
+			width: 80%;
+			background-color: transparent;
+			border: none;
+			font-size: 1.5rem;
+			font-family: $font;
+			color: $white;
+			outline: none;
+			height: auto;
+			overflow-x: hidden;
+			overflow-y: auto;
+			resize: none;
+		}
+
+		.formPic {
+			width: 50px;
+			height: 50px;
+			border-radius: 50px;
+		}
+
+		.matweetButton {
+			align-self: flex-end;
+			width: 20%;
+			height: 10%;
+			min-height: 3.5rem;
+			border-radius: 40px;
+			font-size: 1.2rem;
+			font-weight: bold;
+			background-color: $skyBlue;
+			color: white;
+
+			&:hover {
+				opacity: 0.8;
+				cursor: pointer;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 1400px) {
