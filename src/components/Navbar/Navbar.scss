@@ -95,8 +95,14 @@
 @media screen and (max-width: 1100px) {
 	.navBar {
 		align-items: flex-end;
-		width: 30%;
+		width: 25%;
 
+		.matweetButton {
+			width: 30%;
+			span {
+				display: none;
+			}
+		}
 		.navContainer {
 			margin-left: 2rem;
 			width: 80%;
@@ -127,11 +133,9 @@
 }
 
 @media screen and (max-width: 750px) {
-	.matweetButton {
-		width: 10%;
-
-		span {
-			display: none;
+	.navBar {
+		.matweetButton {
+			width: 60%;
 		}
 	}
 }
